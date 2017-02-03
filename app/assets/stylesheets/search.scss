@@ -26,3 +26,13 @@
 .card-image-top{
   display: inline-block;
 }
+
+a {
+    color: #428BCA;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: red;
+    text-decoration: none;
+}

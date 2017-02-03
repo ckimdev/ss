@@ -23,8 +23,8 @@ module TrendingCampaign
   end
 
   def parsed_data
-    raw_data.extract!("response")["response"]
-      .map! { |m| m.extract!("title", "baseball_card_image_url", "tagline")}
+    raw_data.extract!('response')['response']
+      .map! { |m| m.extract!('title', 'baseball_card_image_url', 'tagline', 'web_url')}
   end
 
   private_class_method :raw_data

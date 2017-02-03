@@ -17,13 +17,15 @@
       <% @result.each do |campaign| %>
         <div class="col-sm-4">
           <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src=<%= campaign["baseball_card_image_url"] %> alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title"><%= campaign["title"] %></h4>
-                <p class="card-text"><%= campaign["tagline"] %></p>
+            <a href=<%= campaign['web_url'] %>>
+              <div class="card">
+                <img class="card-img-top" src=<%= campaign["baseball_card_image_url"] %> alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title"><%= campaign["title"] %></h4>
+                  <p class="card-text"><%= campaign["tagline"] %></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       <% end %>
