@@ -1,0 +1,28 @@
+// Place all the styles related to the search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.card-text{
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  height: 3.6em;
+  max-height: 3.6em;
+  line-height: 1.8em;
+}
+
+.card-title{
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  height: 1.8em;
+  line-height: 1.8em;
+}
+
+.card{
+  text-align: center;
+}
+.card-image-top{
+  display: inline-block;
+}
